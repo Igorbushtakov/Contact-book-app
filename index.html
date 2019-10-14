@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Приложение Книга контактов</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bad+Script">
+    </head>
+    <body>
+    <div class="contacts-app">
+        <div id="num">
+            <h1>Моя телефонная книга <i id="pensil" class="fas fa-pencil-alt"></i></h1>
+            <input type="text" class="name" placeholder="Добавить имя" required>
+            <input type="text" class="number" placeholder="Добавить номер" required>
+            <ul class="numbers">
+              
+            </ul>
+            <div id="buttons">
+                <button class="save">Сохранить</button>
+                <button class="clear">Очистить</button>
+                <button class="showTips">Справка</button>
+            </div>
+        </div>
+        <div id = "overlay">
+            <a href="#" class="closeTips">&times;</a>
+            <ul class="tips">
+                <li>Для добавления контакта напишите текст в поле ввода и нажмите Сохранить</li>
+                <li>Чтобы удалить один контактный номер, наведите на него и нажмите на значок корзины</li>
+                <li>Чтобы удалить все контакты, нажмите "Очистить"</li>
+                <li>Нажмите "Сохранить", чтобы сохранить контакт</li>
+                <li>При перезагрузке страницы все списки контактов остаются подгружаются из Local Storage</li>
+            </ul>
+        </div>
+        <div id = "edit">
+                <a href="#" class="closeTipTwo">&times;</a>
+                <input type="text" class="editName" placeholder="Введите имя">
+                <input type="text" class="editNumber" placeholder="Введите номер">
+                <button class="submit">Сохранить</button>
+        </div>
+       </div> 
+    </body>
+    <script type="text/javascript" src="js/script.js"></script>
+</html>
+
