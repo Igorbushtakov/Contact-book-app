@@ -55,12 +55,9 @@ function createNumber(){
 
        
 //editing of contact
-    li.addEventListener('click', function(event){
-    console.log(event.target.tagName)
-    let sp = document.querySelector("span.numbers-text");
+li.addEventListener('click', function(event){
         let parent = event.target.parentElement;
         let spanEdit = parent.querySelector("span.numbers-text");
-    
         let editBtn = document.querySelector(".submit")
          editBtn.addEventListener("click", (evt) =>{
              let inputs = document.querySelectorAll("#edit input");
@@ -68,14 +65,13 @@ function createNumber(){
                alert("Введите корректные данные")}
              else{
              let editValue = `${inputs[0].value} : ${inputs[1].value}`
-             console.log(editValue)
             if(event.target.tagName == "SPAN"){
                 spanEdit.innerHTML = editValue;
-
             }
-         };       
+         };  
+       })
    })
-})
+    
 
 };
 
